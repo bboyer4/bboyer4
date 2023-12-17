@@ -63,18 +63,11 @@
                         <img src="https://github.com/bboyer4/bboyer4/raw/main/HomicideChoroplethLayout.jpg" width="600" height="500">
                         <p> This map is a choropleth map displaying the homicide density in Chicago by police district. The problem this map aimed to address was to see how homicides could impact tourism in Chicago. The first objectives was to describe the spatial distribution of the density of homicides by police district in Chicago The second objective was to compare the spatial patterns of homicides, Airbnb listings, and Airbnb prices in Chicago </p>
                         <p> To create this map, I first had to create a field containing the value of Area by square mile. Once I calculated the area, I joined the table containing this value to the tables containing AirBnb review and homicide data. I then used the Calculate Field option to calculate the density of Airbnb reviews and homicides by police district. <p></p>
-                        <h2 class="section-heading">Reaching for the Stars</h2>
-                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                        </p>
+                      <h2 class="section-heading">Philadelphia Healthy Food Store Location Candidates </h2>
+                        <img src="https://github.com/bboyer4/bboyer4/raw/main/Candidates.jpg" width="600" height="500">
+                        <p> This map shows the possible locations for a new store containing healthy foods in Philadelphia. The objective of this map was to find a target location in Philadelphia for the development of a new store selling healthy foods. The criteria was that the store had to be: within a Philadelphia empowerment zone; within 2,000 feet of a subway or regional rail station; not within 1,200 feet of a farmers market or corner store participating in the Healthy Corner Store Initiative; and preferably within a larger, contiguous area to increase the likelihood of securing a property. </p>
+                        <p> To create this map, I first created buffers around the train stations and stores selling healthy foods, taking into account the distances specified in the criteria. Then, I used the union function to unite the buffers for the train stations and stores. For the united train station buffers, I used the intersect function to intersect this layer with the empowerment zones. Then, I used the erase function to only show areas that were within 2,000 feet of the train stations but not within 1,200 feet of stores selling healthy food. Finally, in the attribute table,  I used the multipart to singlepart operation so that each polygon was represented by one record and I then created and calculated a field for the area of each polygon in square feet. </p>
+                      
                     </div>
                 </div>
             </div>
